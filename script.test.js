@@ -130,7 +130,7 @@
 
 
 // Calcular desconto 
-// Função para calcular o desconto
+
 function calcularDesconto(valorTotal) {
     if (valorTotal <= 100) {
         return valorTotal * 0.05;
@@ -141,7 +141,7 @@ function calcularDesconto(valorTotal) {
     }
 }
 
-// Função para aplicar o desconto ao valor total
+
 function aplicarDesconto(valorTotal, desconto) {
     return valorTotal - desconto;
 }
@@ -152,7 +152,7 @@ describe("Teste de integração - Cálculo de Desconto", function() {
         const valorTotal = 100;
         const desconto = calcularDesconto(valorTotal);
         const valorComDesconto = aplicarDesconto(valorTotal, desconto);
-        // Verifica se o valor com desconto está correto
+        
         expect(valorComDesconto).toBe(95);
     });
 
@@ -160,7 +160,7 @@ describe("Teste de integração - Cálculo de Desconto", function() {
         const valorTotal = 300;
         const desconto = calcularDesconto(valorTotal);
         const valorComDesconto = aplicarDesconto(valorTotal, desconto);
-        // Verifica se o valor com desconto está correto
+       
         expect(valorComDesconto).toBe(270);
     });
 
@@ -168,7 +168,7 @@ describe("Teste de integração - Cálculo de Desconto", function() {
         const valorTotal = 1000;
         const desconto = calcularDesconto(valorTotal);
         const valorComDesconto = aplicarDesconto(valorTotal, desconto);
-        // Verifica se o valor com desconto está correto
+       
         expect(valorComDesconto).toBe(850);
     });
 });
